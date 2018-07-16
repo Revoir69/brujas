@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello, WebVR! - A-Frame</title>
+    <meta name="description" content="Hello, WebVR! - A-Frame">
+    <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+       <a-assets>
+    <img id="vineta2" src="https://cdn.glitch.com/bbc8ca6c-8cce-48b0-bfb0-096a0c8b78ec%2Fpag9-c2f.png?1531712099421">
+         <img id="vineta1" src="https://cdn.glitch.com/bbc8ca6c-8cce-48b0-bfb0-096a0c8b78ec%2Fpag9-c3f.png?1531712099261">
+         <img id="fondo" src="https://cdn.glitch.com/bbc8ca6c-8cce-48b0-bfb0-096a0c8b78ec%2Ftoulouse-city-skyline-france-toulouse-linear-city-skyline-france-111381919.jpg?1531712625859">
+  </a-assets>
+        <a-plane color="#000000" height="100" width="100" rotation="-90 0 0"></a-plane>
+      <a-curvedimage src="#fondo" height="3.0" radius="5.7" theta-length="72"
+                 rotation="0 100 0" ></a-curvedimage>
+        <a-image src="#vineta1" position="-0.05 1.6315189887414743 -1.7017141249676264"></a-image>
+      <a-image src="#vineta2" position="2.4060648533727 1.632 -1.50190200649293" rotation="0 -37.08157520525042 0"></a-image>
+      
+      <a-sky color="#ECECEC"></a-sky>
+    </a-scene>
+  </body>
+</html>
+
