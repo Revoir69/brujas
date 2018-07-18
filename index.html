@@ -7,14 +7,79 @@
   </head>
   <body>
     <a-scene>
+      <a-camera  position="0 0 0" >
+      <a-entity position="0 0 -0.3677061267743862" geometry="primitive: ring; radiusInner: 0.07; radiusOuter: 0.1" material="color:cyan;shader:flat;height:257.78;width:513.32;wireframeLinewidth:2.2800000000000002" cursor="fuse:true" raycaster="" scale="0.1 0.1 0.1">
+        <a-animation begin="click" easing="ease-in" attribute="scale" fill="forwards" from="0.07 0.07 0.07" to="0.1 0.1 0.1" dur="250"></a-animation>
+        <a-animation begin="fusing" easing="ease-in" attribute="scale" fill="backwards" from="0.1 0.1 0.1" to="0.07 0.07 0.07" dur="1800"></a-animation>
+      </a-entity>
+    </a-camera>
+      
+    
        <a-assets>
-    <img id="vineta2" src="https://cdn.glitch.com/bbc8ca6c-8cce-48b0-bfb0-096a0c8b78ec%2Fpag9-c2f.png?1531712099421">
-         <img id="vineta1" src="https://cdn.glitch.com/bbc8ca6c-8cce-48b0-bfb0-096a0c8b78ec%2Fpag9-c3f.png?1531712099261">
+         <img id="boton" src="https://cdn.glitch.com/bbc8ca6c-8cce-48b0-bfb0-096a0c8b78ec%2Fpag24.png?1531840041294">
+         <img id="vineta7" src="https://cdn.glitch.com/bbc8ca6c-8cce-48b0-bfb0-096a0c8b78ec%2Fpag8-c2.png?1531840047569">
+          <img id="vineta6" src="https://cdn.glitch.com/bbc8ca6c-8cce-48b0-bfb0-096a0c8b78ec%2Fpag8-c1.png?1531840049463">
+         <img id="vineta5" src="https://cdn.glitch.com/bbc8ca6c-8cce-48b0-bfb0-096a0c8b78ec%2Fpag7.png?1531840050336">
+         <img id="vineta4" src="https://cdn.glitch.com/bbc8ca6c-8cce-48b0-bfb0-096a0c8b78ec%2Fpag-6.png?1531840050003">
+         <img id="vineta3" src="https://cdn.glitch.com/bbc8ca6c-8cce-48b0-bfb0-096a0c8b78ec%2Fpag-5.png?1531840043623">
+    <img id="vineta2" src="https://cdn.glitch.com/bbc8ca6c-8cce-48b0-bfb0-096a0c8b78ec%2FCapa%204.png?1531851635122">
+         <img id="vineta1" src="https://cdn.glitch.com/bbc8ca6c-8cce-48b0-bfb0-096a0c8b78ec%2Fpag-3.png?1531840041833">
          <img id="fondo" src="https://cdn.glitch.com/bbc8ca6c-8cce-48b0-bfb0-096a0c8b78ec%2FArtboard%203.png?1531754637423">
+         <img id="fondo1" src="https://cdn.glitch.com/bbc8ca6c-8cce-48b0-bfb0-096a0c8b78ec%2Fhutchison-panorama-part3.jpg?1531850146596">
+         <a-asset-item id="hat" src="https://cdn.glitch.com/bbc8ca6c-8cce-48b0-bfb0-096a0c8b78ec%2FWitch_Hat_Remix.dae?1531932768529"></a-asset-item>
+         
+         
+         
   </a-assets>
-     <a-sound src="src: url(https://cdn.glitch.com/bbc8ca6c-8cce-48b0-bfb0-096a0c8b78ec%2FES_City%20Street%207%20-%20SFX%20Producer.mp3?1531756269574)" autoplay="true" position="0 7 0"></a-sound>  
+      
+      
+       <a-entity id="scene1">
+         <a-sky color="#ffffff"></a-sky>
+         <a-curvedimage src="#fondo1" height="15.0" radius="5.7" theta-length="361" rotation="0 54 0" scale="0.902277808235942 0.902277808235942 0.902277808235942" position="" material="" geometry="height:16.52;radius:21.07;thetaLength:361">
+      
+      
+      </a-curvedimage>
+         <a-image src="#vineta1" position="0.02848027105689155 0.015433910947492633 -0.5717042757473841" material="" geometry="" scale="0.588 0.618 0.648" rotation="0 -4.8159328585588455 0">
+           <a-animation attribute="position" from="0.02848027105689155 0.015 -0.5717042757473841" to="0.02848027105689155 0.050 -0.5717042757473841" dur="1500" direction="alternate" fill="forwards" repeat="indefinite"></a-animation>
+      </a-image>
+         
+      <a-image id="viñeta2" onclick="nextImage()" src="#vineta2" position="0.679 0.021 0.20307788292167128" material="" geometry="" scale="0.568 0.658 0.648" rotation="-0.01 -125.24060851438354 0">
+        <a-animation attribute="position" from="0.679 0.021 0.20307788292167128" to="0.679 0.021 0.179" dur="1400" direction="alternate" fill="forwards" repeat="indefinite"></a-animation>
+      </a-image>
+         
+         <a-image visible="false" id="viñeta3" src="#vineta3" position="0.679 0.021 0.20307788292167128" material="" geometry="" scale="0.598 0.658 0.648" rotation="-0.01 -125.24060851438354 0">
+           <a-animation attribute="position" from="0.679 0.021 0.20307788292167128" to="0.679 0.021 0.220" dur="1400" direction="alternate" fill="forwards" repeat="indefinite"></a-animation>
+      </a-image>
+         
+         
+         <a-image id="viñeta4" onclick="nextImage1()" src="#vineta4" position="-0.041 -0.006354522894499379 0.6939487770905086" material="" geometry="" scale="0.588 0.658 0.648" rotation="-0.03 163.76769163691412 1.9412565490149754e-19">
+           <a-animation attribute="position" from="-0.041 -0.006354522894499379 0.6939487770905086" to="-0.041 -0.006354522894499379 0.670" dur="1400" direction="alternate" fill="forwards" repeat="indefinite"></a-animation>
+      </a-image>
+         
+         <a-image id="viñeta5" visible="false" src="#vineta5" position="-0.041 -0.006354522894499379 0.6939487770905086" material="" geometry="" scale="0.598 0.658 0.648" rotation="-0.03 163.76769163691412 1.9412565490149754e-19">
+           <a-animation attribute="position" from="-0.041 -0.006354522894499379 0.6939487770905086" to="-0.041 -0.006354522894499379 0.670" dur="1400" direction="alternate" fill="forwards" repeat="indefinite"></a-animation>
+      </a-image>
+         
+          <a-image id="viñeta6" onclick="nextImage2()" src="#vineta6" position="-0.873 0.021291495990571462 0.01831406701093702" material="" geometry="" scale="0.887 0.658 0.648" rotation="-0.08 84.48379341010545 0" >
+            <a-animation attribute="position" from="-0.873 0.021 0.01831406701093702" to="-0.873 0.050 0.01831406701093702" dur="1000" direction="alternate" fill="forwards" repeat="indefinite"></a-animation>
+      </a-image>
+         
+         <a-image  id="viñeta7" src="#vineta7" visible="false" position="-0.873 0.021291495990571462 0.01831406701093702" material="" geometry="" scale="0.907 0.658 0.648" rotation="-0.08 84.48379341010545 0">
+            <a-animation attribute="position" from="-0.873 0.021 0.01831406701093702" to="-0.873 0.050 0.01831406701093702" dur="1000" direction="alternate" fill="forwards" repeat="indefinite"></a-animation>
+      </a-image>
+         
+        <a-image id="boton1" onclick="nextScene()" src="#boton" position="-0.723 -0.22595079927892778 -0.3314731718178382" material="" geometry="" scale="0.204 0.16960768834797327 0.16703006390499495" rotation="-0.05 47.8431999613386 -3.106010856881962e-18">
+      </a-image>
+         
+         
+    </a-entity>
+      
+      
+      
+      <a-entity id="scene2" visible="false">
+        <a-sound src="src: url(https://cdn.glitch.com/bbc8ca6c-8cce-48b0-bfb0-096a0c8b78ec%2FES_City%20Street%207%20-%20SFX%20Producer.mp3?1531756269574)" autoplay="true" position="0 7 0"></a-sound>  
       <a-sound src="src: url(https://cdn.glitch.com/bbc8ca6c-8cce-48b0-bfb0-096a0c8b78ec%2FES_Falling%20Snow%20-%20H%C3%A5kan%20Eriksson.mp3?1531756789389)" autoplay="true" position="0 7 0"></a-sound> 
-    <a-curvedimage src="#fondo" height="15.0" radius="5.7" theta-length="361" rotation="0 150 0" scale="0.8 0.8 0.8" position="0 2 0" material="" geometry="height:4.33;radius:8.500000000000002;thetaLength:361">
+    <a-curvedimage src="#fondo" height="15.0" radius="5.7" theta-length="361" rotation="0 150 0" scale="0.8 0.8 0.8" position="0 0 0" material="" geometry="height:4.33;radius:8.500000000000002;thetaLength:361">
       
       
       </a-curvedimage>
@@ -34,9 +99,46 @@
       <a-image src="https://cdn.glitch.com/bbc8ca6c-8cce-48b0-bfb0-096a0c8b78ec%2Fnube3.png?1531757313611" material="" geometry="" rotation="35.45693619221716 0 0" scale="1.738296055026916 1 1" position="-1.0253908994590977 8.700  -5.836208447005227">
         <a-animation attribute="position" from="-1.0253908994590977 8.700  -5.836208447005227" to="-1.100 8.700 -5.900" dur="1300" direction="alternate" fill="forwards" repeat="indefinite"></a-animation>
       </a-image>
+        <a-sky color="#FFFFFF"></a-sky>
+    </a-entity>
       
-      <a-sky color="#FFFFFF"></a-sky>
+      
+      
+        
+   
+      
+      
     </a-scene>
+    
+    <script type="text/javascript">
+
+  function nextScene() {
+    document.getElementById('scene1').setAttribute('visible', 'false')
+    document.getElementById('scene2').setAttribute('visible', 'true')
+  }
+      
+      function nextImage() {
+    document.getElementById('viñeta2').setAttribute('visible', 'false')
+    document.getElementById('viñeta3').setAttribute('visible', 'true')
+        
+  }
+      
+      function nextImage1() {
+    document.getElementById('viñeta4').setAttribute('visible', 'false')
+    document.getElementById('viñeta5').setAttribute('visible', 'true')
+        
+  }
+      
+      function nextImage2() {
+    document.getElementById('viñeta6').setAttribute('visible', 'false')
+    document.getElementById('viñeta7').setAttribute('visible', 'true')
+        
+  }
+      
+    
+  </script>
+    
+    
   </body>
 </html>
 
