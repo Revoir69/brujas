@@ -2,18 +2,24 @@
 <html>
   <head>
     <title>Hello, WebVR! - A-Frame</title>
-    <meta name="description" content="Hello, WebVR! - A-Frame">
+    <meta name="description" content="Los patines">
     <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
   </head>
   <body>
+    
+        
+
     <a-scene>
-      <a-camera  position="0 0 0" >
-      <a-entity position="0 0 -0.3677061267743862" geometry="primitive: ring; radiusInner: 0.07; radiusOuter: 0.1" material="color:cyan;shader:flat;height:257.78;width:513.32;wireframeLinewidth:2.2800000000000002" cursor="fuse:true" raycaster="" scale="0.1 0.1 0.1">
-        <a-animation begin="click" easing="ease-in" attribute="scale" fill="forwards" from="0.07 0.07 0.07" to="0.1 0.1 0.1" dur="250"></a-animation>
-        <a-animation begin="fusing" easing="ease-in" attribute="scale" fill="backwards" from="0.1 0.1 0.1" to="0.07 0.07 0.07" dur="1800"></a-animation>
+    
+  <a-camera position="0 1.6 0">
+     <a-entity position="0 0 -0.3184487610831978" geometry="primitive:ring;radiusInner:0.02;radiusOuter:0.03" material="color:cyan;shader:flat" cursor="fuse:true" raycaster="" scale="0.1 0.1 0.1">
+        <a-animation begin="click" easing="ease-in" attribute="scale"
+             fill="forwards" from="0.3 0.3 0.3" to="0.5 0.5 0.5" dur="250"></a-animation>
+        <a-animation begin="fusing" easing="ease-in" attribute="scale"
+             fill="backwards" from="0.5 0.5 0.5" to="0.3 0.3 0.3" dur="1800"></a-animation>
       </a-entity>
     </a-camera>
-      
+     
     
        <a-assets>
          <img id="boton" src="https://cdn.glitch.com/bbc8ca6c-8cce-48b0-bfb0-096a0c8b78ec%2Fpag24.png?1531840041294">
@@ -26,49 +32,51 @@
          <img id="vineta1" src="https://cdn.glitch.com/bbc8ca6c-8cce-48b0-bfb0-096a0c8b78ec%2Fpag-3.png?1531840041833">
          <img id="fondo" src="https://cdn.glitch.com/bbc8ca6c-8cce-48b0-bfb0-096a0c8b78ec%2FArtboard%203.png?1531754637423">
          <img id="fondo1" src="https://cdn.glitch.com/bbc8ca6c-8cce-48b0-bfb0-096a0c8b78ec%2Fhutchison-panorama-part3.jpg?1531850146596">
-         <a-asset-item id="hat" src="https://cdn.glitch.com/bbc8ca6c-8cce-48b0-bfb0-096a0c8b78ec%2FWitch_Hat_Remix.dae?1531932768529"></a-asset-item>
+         
          
          
          
   </a-assets>
       
-      
+    
        <a-entity id="scene1">
+         
+         
          <a-sky color="#ffffff"></a-sky>
-         <a-curvedimage src="#fondo1" height="15.0" radius="5.7" theta-length="361" rotation="0 54 0" scale="0.902277808235942 0.902277808235942 0.902277808235942" position="" material="" geometry="height:16.52;radius:21.07;thetaLength:361">
+        <a-curvedimage src="#fondo1" height="15.0" radius="5.7" theta-length="361" rotation="0 54 0" scale="0.902277808235942 0.902277808235942 0.902277808235942" position="0 2.6598861234312934 0" material="" geometry="height:16.52;radius:22.650000000000002;thetaLength:361">
       
       
       </a-curvedimage>
-         <a-image src="#vineta1" position="0.02848027105689155 0.015433910947492633 -0.5717042757473841" material="" geometry="" scale="0.588 0.618 0.648" rotation="0 -4.8159328585588455 0">
-           <a-animation attribute="position" from="0.02848027105689155 0.015 -0.5717042757473841" to="0.02848027105689155 0.050 -0.5717042757473841" dur="1500" direction="alternate" fill="forwards" repeat="indefinite"></a-animation>
+         <a-image src="#vineta1" position="0 1.6 -0.6" material="" geometry="" scale="0.588 0.618 0.648" rotation="0 -4.8159328585588455 0">
+           <a-animation attribute="position" from="0 1.6 -0.6" to="0 1.65 -0.6" dur="1600" direction="alternate" fill="forwards" repeat="indefinite"></a-animation>
       </a-image>
          
-      <a-image id="viñeta2" onclick="nextImage()" src="#vineta2" position="0.679 0.021 0.20307788292167128" material="" geometry="" scale="0.568 0.658 0.648" rotation="-0.01 -125.24060851438354 0">
-        <a-animation attribute="position" from="0.679 0.021 0.20307788292167128" to="0.679 0.021 0.179" dur="1400" direction="alternate" fill="forwards" repeat="indefinite"></a-animation>
+      <a-image id="viñeta2" onclick="nextImage()" src="#vineta2" position="0.679 1.6 0.2" material="" geometry="" scale="0.568 0.658 0.648" rotation="-0.01 -125.24060851438354 0">
+        <a-animation attribute="position" from="0.679 1.6 0.2" to="0.679 1.6 0.17" dur="1400" direction="alternate" fill="forwards" repeat="indefinite"></a-animation>
       </a-image>
          
-         <a-image visible="false" id="viñeta3" src="#vineta3" position="0.679 0.021 0.20307788292167128" material="" geometry="" scale="0.598 0.658 0.648" rotation="-0.01 -125.24060851438354 0">
-           <a-animation attribute="position" from="0.679 0.021 0.20307788292167128" to="0.679 0.021 0.220" dur="1400" direction="alternate" fill="forwards" repeat="indefinite"></a-animation>
+         <a-image visible="false" id="viñeta3" src="#vineta3" position="0.679 1.6 0.2" material="" geometry="" scale="0.598 0.658 0.648" rotation="-0.01 -125.24060851438354 0">
+           <a-animation attribute="position" from="0.679 1.6 0.2" to="0.679 1.6 0.25" dur="1400" direction="alternate" fill="forwards" repeat="indefinite"></a-animation>
       </a-image>
          
          
-         <a-image id="viñeta4" onclick="nextImage1()" src="#vineta4" position="-0.041 -0.006354522894499379 0.6939487770905086" material="" geometry="" scale="0.588 0.658 0.648" rotation="-0.03 163.76769163691412 1.9412565490149754e-19">
-           <a-animation attribute="position" from="-0.041 -0.006354522894499379 0.6939487770905086" to="-0.041 -0.006354522894499379 0.670" dur="1400" direction="alternate" fill="forwards" repeat="indefinite"></a-animation>
+         <a-image id="viñeta4" onclick="nextImage1()" src="#vineta4" position="-0.041 1.6 0.6939487770905086" material="" geometry="" scale="0.588 0.658 0.648" rotation="-0.03 163.76769163691412 1.9412565490149754e-19">
+           <a-animation attribute="position" from="-0.041 1.6 0.6939487770905086" to="-0.041 1.6 0.670" dur="1400" direction="alternate" fill="forwards" repeat="indefinite"></a-animation>
       </a-image>
          
-         <a-image id="viñeta5" visible="false" src="#vineta5" position="-0.041 -0.006354522894499379 0.6939487770905086" material="" geometry="" scale="0.598 0.658 0.648" rotation="-0.03 163.76769163691412 1.9412565490149754e-19">
-           <a-animation attribute="position" from="-0.041 -0.006354522894499379 0.6939487770905086" to="-0.041 -0.006354522894499379 0.670" dur="1400" direction="alternate" fill="forwards" repeat="indefinite"></a-animation>
+         <a-image id="viñeta5" visible="false" src="#vineta5" position="-0.041 1.6 0.6939487770905086" material="" geometry="" scale="0.598 0.658 0.648" rotation="-0.03 163.76769163691412 1.9412565490149754e-19">
+            <a-animation attribute="position" from="-0.041 1.6 0.6939487770905086" to="-0.041 1.6 0.670" dur="1400" direction="alternate" fill="forwards" repeat="indefinite"></a-animation>
       </a-image>
          
-          <a-image id="viñeta6" onclick="nextImage2()" src="#vineta6" position="-0.873 0.021291495990571462 0.01831406701093702" material="" geometry="" scale="0.887 0.658 0.648" rotation="-0.08 84.48379341010545 0" >
-            <a-animation attribute="position" from="-0.873 0.021 0.01831406701093702" to="-0.873 0.050 0.01831406701093702" dur="1000" direction="alternate" fill="forwards" repeat="indefinite"></a-animation>
+          <a-image id="viñeta6" onclick="nextImage2()" src="#vineta6" position="-0.873 1.6 0.01831406701093702" material="" geometry="" scale="0.887 0.658 0.648" rotation="-0.08 84.48379341010545 0" >
+           <a-animation attribute="position" from="-0.873 1.6 0.01831406701093702" to="-0.873 1.650 0.01831406701093702" dur="800" direction="alternate" fill="forwards" repeat="indefinite"></a-animation>
       </a-image>
          
-         <a-image  id="viñeta7" src="#vineta7" visible="false" position="-0.873 0.021291495990571462 0.01831406701093702" material="" geometry="" scale="0.907 0.658 0.648" rotation="-0.08 84.48379341010545 0">
-            <a-animation attribute="position" from="-0.873 0.021 0.01831406701093702" to="-0.873 0.050 0.01831406701093702" dur="1000" direction="alternate" fill="forwards" repeat="indefinite"></a-animation>
+         <a-image  id="viñeta7" src="#vineta7" visible="false" position="-0.873 1.6 0.01831406701093702" material="" geometry="" scale="0.907 0.658 0.648" rotation="-0.08 84.48379341010545 0">
+         <a-animation attribute="position" from="-0.873 1.6 0.01831406701093702" to="-0.873 1.650 0.01831406701093702" dur="800" direction="alternate" fill="forwards" repeat="indefinite"></a-animation>
       </a-image>
          
-        <a-image id="boton1" onclick="nextScene()" src="#boton" position="-0.723 -0.22595079927892778 -0.3314731718178382" material="" geometry="" scale="0.204 0.16960768834797327 0.16703006390499495" rotation="-0.05 47.8431999613386 -3.106010856881962e-18">
+        <a-image id="boton1" onclick="nextScene()" src="#boton" position="-0.723 1.3 -0.3314731718178382" material="" geometry="" scale="0.204 0.16960768834797327 0.16703006390499495" rotation="-0.05 47.8431999613386 -3.106010856881962e-18">
       </a-image>
          
          
